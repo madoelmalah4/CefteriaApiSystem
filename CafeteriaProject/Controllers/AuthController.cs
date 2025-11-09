@@ -40,7 +40,7 @@ namespace CafeteriaProject.Controllers
             var token = _authService.GenerateJwtToken(newUser);
             newUser.Token = token; 
 
-            return CreatedAtAction(nameof(Register), new { token = newUser.Token }); 
+            return CreatedAtAction(nameof(Register), new { isSuccess = true , token = newUser.Token }); 
         }
 
 
@@ -63,7 +63,7 @@ namespace CafeteriaProject.Controllers
 
             user.Token = token;
 
-            return Ok(new { Token = token, UserId = user.Id, Username = user.Username,});
+            return Ok(new { isSuccess = true, Token = token, UserId = user.Id, Username = user.Username,});
         }
 
         [HttpPost("logout")]
@@ -86,7 +86,7 @@ namespace CafeteriaProject.Controllers
                 }
             }
 
-            return Ok(new { message = "Logged out successfully. Token expired." });
+            return Ok(new { isSuccess = true , message = "Logged out successfully. Token expired." });
         }
 
 

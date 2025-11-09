@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Controllers\\UserController.cs",
+              "RelativeToolTip": "CafeteriaProject\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAKcAAAAAAAAAAAAYwLYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T15:46:45.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "CafeteriaProject\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T15:46:38.299Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

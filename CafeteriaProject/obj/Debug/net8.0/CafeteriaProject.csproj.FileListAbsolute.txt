@@ -171,3 +171,4 @@ C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\obj\Debug\net8.0\C
 C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\obj\Debug\net8.0\CafeteriaProject.genruntimeconfig.cache
 C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\obj\Debug\net8.0\ref\CafeteriaProject.dll
 C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\obj\Debug\net8.0\CafeteriaProject.sourcelink.json
