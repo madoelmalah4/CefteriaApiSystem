@@ -8,19 +8,13 @@ namespace CafeteriaProject.Models
     {
         public int Id { get; set; }
 
-        [Required, MaxLength(150)]
-        public string ItemName { get; set; }
-
-        [Required]
-        public decimal Price { get; set; }
-
-        [Required]
-        public int Quantity { get; set; }
-        [Required]
         public int OrderId { get; set; }
-        [ForeignKey("OrderId")]
         public Order Order { get; set; }
 
-    }
+        public int MenuItemId { get; set; }
+        public MenuItem MenuItem { get; set; }
 
+        public int Quantity { get; set; }
+        public decimal Price { get; set; } // Snapshot of MenuItem.Price
+    }
 }

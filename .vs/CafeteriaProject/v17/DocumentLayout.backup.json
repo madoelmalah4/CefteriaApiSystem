@@ -9,6 +9,50 @@
     {
       "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\models\\dto\u0027s\\order_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\models\\dto\u0027s\\order_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\models\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\models\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\migrations\\20251110224446_finishing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\migrations\\20251110224446_finishing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\models\\menuitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\migrations\\20251110223811_mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\migrations\\20251110223811_mig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\models\\dto\u0027s\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\models\\dto\u0027s\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|c:\\users\\e.j.s\\source\\repos\\cafeteriaproject\\cafeteriaproject\\models\\dto\u0027s\\authuntication_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4CE67ED6-83D2-4427-97C9-B51C71C3EC41}|CafeteriaProject\\CafeteriaProject.csproj|solutionrelative:cafeteriaproject\\models\\dto\u0027s\\authuntication_dto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,15 +70,112 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UserController.cs",
-              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Controllers\\UserController.cs",
-              "RelativeDocumentMoniker": "CafeteriaProject\\Controllers\\UserController.cs",
-              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Controllers\\UserController.cs*",
-              "RelativeToolTip": "CafeteriaProject\\Controllers\\UserController.cs*",
-              "ViewState": "AgIAAKcAAAAAAAAAAAAYwLYAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\appsettings.json",
+              "RelativeDocumentMoniker": "CafeteriaProject\\appsettings.json",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\appsettings.json",
+              "RelativeToolTip": "CafeteriaProject\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-10T22:46:40.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MenuItem.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\MenuItem.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Models\\MenuItem.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\MenuItem.cs",
+              "RelativeToolTip": "CafeteriaProject\\Models\\MenuItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-09T15:46:45.676Z",
+              "WhenOpened": "2025-11-10T22:40:41.791Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "20251110223811_Mig.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Migrations\\20251110223811_Mig.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Migrations\\20251110223811_Mig.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Migrations\\20251110223811_Mig.cs",
+              "RelativeToolTip": "CafeteriaProject\\Migrations\\20251110223811_Mig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T22:38:12.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\Order.cs",
+              "RelativeToolTip": "CafeteriaProject\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T22:25:41.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\OrderItem.cs",
+              "RelativeToolTip": "CafeteriaProject\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T22:25:31.559Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Authuntication_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\DTO\u0027s\\Authuntication_DTO.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Models\\DTO\u0027s\\Authuntication_DTO.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\DTO\u0027s\\Authuntication_DTO.cs",
+              "RelativeToolTip": "CafeteriaProject\\Models\\DTO\u0027s\\Authuntication_DTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T22:25:10.964Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Models\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "CafeteriaProject\\Models\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAQAAACAzMzMzMw3wAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T22:21:30.824Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OrderItemDto.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\DTO\u0027s\\OrderItemDto.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Models\\DTO\u0027s\\OrderItemDto.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\DTO\u0027s\\OrderItemDto.cs",
+              "RelativeToolTip": "CafeteriaProject\\Models\\DTO\u0027s\\OrderItemDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T22:23:12.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Order_DTO.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\DTO\u0027s\\Order_DTO.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Models\\DTO\u0027s\\Order_DTO.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Models\\DTO\u0027s\\Order_DTO.cs",
+              "RelativeToolTip": "CafeteriaProject\\Models\\DTO\u0027s\\Order_DTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T22:23:09.71Z",
               "EditorCaption": ""
             },
             {
@@ -45,10 +186,47 @@
               "RelativeDocumentMoniker": "CafeteriaProject\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Controllers\\AuthController.cs",
               "RelativeToolTip": "CafeteriaProject\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAABNAAAAAAAAAA==",
+              "ViewState": "AgIAAFQAAACAmJmZmZkjwCoAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-09T15:46:38.299Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Controllers\\UserController.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Controllers\\UserController.cs",
+              "RelativeToolTip": "CafeteriaProject\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAFIAAAAA7szMzMwvwGQAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T15:46:45.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20251110224446_Finishing.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Migrations\\20251110224446_Finishing.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Migrations\\20251110224446_Finishing.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Migrations\\20251110224446_Finishing.cs",
+              "RelativeToolTip": "CafeteriaProject\\Migrations\\20251110224446_Finishing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T22:44:47.32Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Program.cs",
+              "RelativeDocumentMoniker": "CafeteriaProject\\Program.cs",
+              "ToolTip": "C:\\Users\\E.J.S\\source\\repos\\CafeteriaProject\\CafeteriaProject\\Program.cs",
+              "RelativeToolTip": "CafeteriaProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-10T22:46:37.291Z"
             }
           ]
         }

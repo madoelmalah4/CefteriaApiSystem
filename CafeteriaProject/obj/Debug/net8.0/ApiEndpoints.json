@@ -42,9 +42,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CafeteriaProject.Controllers.UserController",
-    "Method": "GetOrders",
-    "RelativePath": "api/User/orders",
+    "ContainingType": "CafeteriaProject.Controllers.OrdersController",
+    "Method": "GetAllOrders",
+    "RelativePath": "api/Orders",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -52,9 +52,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "CafeteriaProject.Controllers.UserController",
-    "Method": "AddOrder",
-    "RelativePath": "api/User/orders",
+    "ContainingType": "CafeteriaProject.Controllers.OrdersController",
+    "Method": "CreateOrder",
+    "RelativePath": "api/Orders",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -65,6 +65,53 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CafeteriaProject.Controllers.OrdersController",
+    "Method": "GetOrderById",
+    "RelativePath": "api/Orders/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CafeteriaProject.Controllers.OrdersController",
+    "Method": "EditOrder",
+    "RelativePath": "api/Orders/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "CafeteriaProject.Models.DTO_s.OrderDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CafeteriaProject.Controllers.OrdersController",
+    "Method": "GetMenu",
+    "RelativePath": "api/Orders/menu",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   }
 ]

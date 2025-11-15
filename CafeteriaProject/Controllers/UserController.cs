@@ -2,181 +2,173 @@
 using CafeteriaProject.Models.Data;
 using CafeteriaProject.Models.DTO_s;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
+using System.Linq;
 using System.Security.Claims;
+using System.Threading.Tasks;
 
 namespace CafeteriaProject.Controllers
 {
-    [Route("api/[controller]")]
     [ApiController]
+    [Route("api/[controller]")]
     [Authorize]
-    public class UserController : ControllerBase
+    public class OrdersController : ControllerBase
     {
         private readonly AppDbContext _context;
-
-        public UserController(AppDbContext context)
+        public OrdersController(AppDbContext context)
         {
             _context = context;
         }
 
-        [HttpGet("orders")]
-        public async Task<IActionResult> GetOrders()
+        // ✅ GET: /api/orders
+        [HttpGet]
+        public async Task<IActionResult> GetAllOrders()
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (userId == null)
-                return Unauthorized("Invalid or missing token.");
+                return Unauthorized("Invalid token.");
 
             var orders = await _context.Orders
                 .Include(o => o.OrderItems)
+                .ThenInclude(oi => oi.MenuItem)
                 .Where(o => o.UserId == int.Parse(userId))
+                .OrderByDescending(o => o.OrderDate)
                 .ToListAsync();
 
-            var orderDtos = orders.Select(o => new OrderDto
+            var orderDtos = orders.Select(o => new
             {
-                Id = o.Id,
-                OrderDate = o.OrderDate,
-                TotalPrice = o.TotalPrice,
-                OrderItems = o.OrderItems.Select(i => new OrderItemDto
+                o.Id,
+                o.OrderDate,
+                o.TotalPrice,
+                OrderItems = o.OrderItems.Select(oi => new
                 {
-                    ItemName = i.ItemName,
-                    Price = i.Price,
-                    Quantity = i.Quantity
-                }).ToList()
-            }).ToList();
+                    oi.MenuItemId,
+                    oi.MenuItem.ItemName,
+                    oi.Price,
+                    oi.Quantity
+                })
+            });
 
             return Ok(new { orders = orderDtos, isSuccess = true });
         }
 
-        // ✅ GET /api/user/orders/{id}
-        [HttpGet("orders/{id}")]
+        // ✅ GET: /api/orders/{id}
+        [HttpGet("{id}")]
         public async Task<IActionResult> GetOrderById(int id)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (userId == null)
-                return Unauthorized("Invalid or missing token.");
+                return Unauthorized("Invalid token.");
 
             var order = await _context.Orders
                 .Include(o => o.OrderItems)
+                .ThenInclude(oi => oi.MenuItem)
                 .FirstOrDefaultAsync(o => o.Id == id && o.UserId == int.Parse(userId));
 
             if (order == null)
-                return NotFound(new { message = "Order not found.", isSuccess = false });
+                return NotFound(new { message = "Order not found", isSuccess = false });
 
-            var orderDto = new OrderDto
+            var orderDto = new
             {
-                Id = order.Id,
-                OrderDate = order.OrderDate,
-                TotalPrice = order.TotalPrice,
-                OrderItems = order.OrderItems.Select(i => new OrderItemDto
+                order.Id,
+                order.OrderDate,
+                order.TotalPrice,
+                OrderItems = order.OrderItems.Select(oi => new
                 {
-                    ItemName = i.ItemName,
-                    Price = i.Price,
-                    Quantity = i.Quantity
-                }).ToList()
+                    oi.MenuItemId,
+                    oi.MenuItem.ItemName,
+                    oi.Price,
+                    oi.Quantity
+                })
             };
 
             return Ok(new { order = orderDto, isSuccess = true });
         }
 
-        // ✅ POST /api/user/orders
-        [HttpPost("orders")]
-        public async Task<IActionResult> AddOrder([FromBody] OrderDto dto)
+        // ✅ POST: /api/orders
+        [HttpPost]
+        public async Task<IActionResult> CreateOrder([FromBody] OrderDto dto)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (userId == null)
-                return Unauthorized("Invalid or missing token.");
+                return Unauthorized("Invalid token.");
 
             var order = new Order
             {
                 UserId = int.Parse(userId),
-                OrderDate = DateTime.UtcNow,
-                OrderItems = dto.OrderItems.Select(i => new OrderItem
-                {
-                    ItemName = i.ItemName,
-                    Price = i.Price,
-                    Quantity = i.Quantity
-                }).ToList()
+                OrderDate = DateTime.UtcNow
             };
+
+            foreach (var item in dto.OrderItems)
+            {
+                var menuItem = await _context.MenuItems.FindAsync(item.MenuItemId);
+                if (menuItem == null) continue;
+
+                order.OrderItems.Add(new OrderItem
+                {
+                    MenuItemId = menuItem.Id,
+                    Quantity = item.Quantity,
+                    Price = menuItem.Price
+                });
+            }
 
             order.TotalPrice = order.OrderItems.Sum(i => i.Price * i.Quantity);
 
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
 
-            var orderDto = new OrderDto
-            {
-                Id = order.Id,
-                OrderDate = order.OrderDate,
-                TotalPrice = order.TotalPrice,
-                OrderItems = order.OrderItems.Select(i => new OrderItemDto
-                {
-                    ItemName = i.ItemName,
-                    Price = i.Price,
-                    Quantity = i.Quantity
-                }).ToList()
-            };
-
-            return CreatedAtAction(nameof(GetOrderById), new { id = order.Id }, new { order = orderDto, isSuccess = true });
+            return Ok(new { message = "Order created successfully", orderId = order.Id, isSuccess = true });
         }
 
-        // ✅ PUT /api/user/orders/{id}
-        [HttpPut("orders/{id}")]
-        public async Task<IActionResult> UpdateOrder(int id, [FromBody] OrderDto dto)
+        // ✅ PUT: /api/orders/{id}
+        [HttpPut("{id}")]
+        public async Task<IActionResult> EditOrder(int id, [FromBody] OrderDto dto)
         {
             var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             if (userId == null)
-                return Unauthorized("Invalid or missing token.");
+                return Unauthorized("Invalid token.");
 
             var order = await _context.Orders
                 .Include(o => o.OrderItems)
                 .FirstOrDefaultAsync(o => o.Id == id && o.UserId == int.Parse(userId));
 
             if (order == null)
-                return NotFound(new { message = "Order not found.", isSuccess = false });
+                return NotFound(new { message = "Order not found", isSuccess = false });
 
-            // Remove old items
+            // Clear old order items
             _context.OrderItems.RemoveRange(order.OrderItems);
 
-            // Add updated items
-            order.OrderItems = dto.OrderItems.Select(i => new OrderItem
+            // Add new ones
+            foreach (var item in dto.OrderItems)
             {
-                ItemName = i.ItemName,
-                Price = i.Price,
-                Quantity = i.Quantity
-            }).ToList();
+                var menuItem = await _context.MenuItems.FindAsync(item.MenuItemId);
+                if (menuItem == null) continue;
 
-            // Update total
+                order.OrderItems.Add(new OrderItem
+                {
+                    MenuItemId = menuItem.Id,
+                    Quantity = item.Quantity,
+                    Price = menuItem.Price
+                });
+            }
+
             order.TotalPrice = order.OrderItems.Sum(i => i.Price * i.Quantity);
             order.OrderDate = DateTime.UtcNow;
 
             await _context.SaveChangesAsync();
 
-            return Ok(new { message = "Order updated successfully.", isSuccess = true });
+            return Ok(new { message = "Order updated successfully", isSuccess = true });
         }
 
-        // ✅ DELETE /api/user/orders/{id}
-        [HttpDelete("orders/{id}")]
-        public async Task<IActionResult> DeleteOrder(int id)
+        // ✅ GET: /api/orders/menu
+        [AllowAnonymous]
+        [HttpGet("menu")]
+        public async Task<IActionResult> GetMenu()
         {
-            var userId = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            if (userId == null)
-                return Unauthorized("Invalid or missing token.");
-
-            var order = await _context.Orders
-                .Include(o => o.OrderItems)
-                .FirstOrDefaultAsync(o => o.Id == id && o.UserId == int.Parse(userId));
-
-            if (order == null)
-                return NotFound(new { message = "Order not found.", isSuccess = false });
-
-            _context.OrderItems.RemoveRange(order.OrderItems);
-            _context.Orders.Remove(order);
-
-            await _context.SaveChangesAsync();
-
-            return Ok(new { message = "Order deleted successfully.", isSuccess = true });
+            var items = await _context.MenuItems.ToListAsync();
+            return Ok(new { menu = items, isSuccess = true });
         }
     }
 }

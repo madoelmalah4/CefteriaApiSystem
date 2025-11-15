@@ -79,10 +79,10 @@
         }
       }
     },
-    "/api/User/orders": {
+    "/api/Orders": {
       "get": {
         "tags": [
-          "User"
+          "Orders"
         ],
         "responses": {
           "200": {
@@ -92,7 +92,7 @@
       },
       "post": {
         "tags": [
-          "User"
+          "Orders"
         ],
         "requestBody": {
           "content": {
@@ -113,6 +113,81 @@
             }
           }
         },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Orders/{id}": {
+      "get": {
+        "tags": [
+          "Orders"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Orders"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrderDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Orders/menu": {
+      "get": {
+        "tags": [
+          "Orders"
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -148,34 +223,22 @@
             "type": "integer",
             "format": "int32"
           },
-          "orderDate": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "totalPrice": {
-            "type": "number",
-            "format": "double"
-          },
           "orderItems": {
             "type": "array",
             "items": {
-              "$ref": "#/components/schemas/OrderItemDto"
+              "$ref": "#/components/schemas/OrderItemSelectionDto"
             },
             "nullable": true
           }
         },
         "additionalProperties": false
       },
-      "OrderItemDto": {
+      "OrderItemSelectionDto": {
         "type": "object",
         "properties": {
-          "itemName": {
-            "type": "string",
-            "nullable": true
-          },
-          "price": {
-            "type": "number",
-            "format": "double"
+          "menuItemId": {
+            "type": "integer",
+            "format": "int32"
           },
           "quantity": {
             "type": "integer",

@@ -22,6 +22,52 @@ namespace CafeteriaProject.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("CafeteriaProject.Models.MenuItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("ItemName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MenuItems");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            ItemName = "Burger",
+                            Price = 50m
+                        },
+                        new
+                        {
+                            Id = 2,
+                            ItemName = "Fries",
+                            Price = 30m
+                        },
+                        new
+                        {
+                            Id = 3,
+                            ItemName = "Pizza",
+                            Price = 100m
+                        },
+                        new
+                        {
+                            Id = 4,
+                            ItemName = "Cola",
+                            Price = 20m
+                        });
+                });
+
             modelBuilder.Entity("CafeteriaProject.Models.Order", b =>
                 {
                     b.Property<int>("Id")
@@ -54,10 +100,8 @@ namespace CafeteriaProject.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("ItemName")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
+                    b.Property<int>("MenuItemId")
+                        .HasColumnType("int");
 
                     b.Property<int>("OrderId")
                         .HasColumnType("int");
@@ -69,6 +113,8 @@ namespace CafeteriaProject.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("MenuItemId");
 
                     b.HasIndex("OrderId");
 
@@ -110,11 +156,19 @@ namespace CafeteriaProject.Migrations
 
             modelBuilder.Entity("CafeteriaProject.Models.OrderItem", b =>
                 {
+                    b.HasOne("CafeteriaProject.Models.MenuItem", "MenuItem")
+                        .WithMany()
+                        .HasForeignKey("MenuItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.HasOne("CafeteriaProject.Models.Order", "Order")
                         .WithMany("OrderItems")
                         .HasForeignKey("OrderId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("MenuItem");
 
                     b.Navigation("Order");
                 });

@@ -172,3 +172,11 @@ C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\obj\Debug\net8.0\C
 C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\obj\Debug\net8.0\ref\CafeteriaProject.dll
 C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\obj\Debug\net8.0\CafeteriaProject.sourcelink.json
+C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\bin\Debug\net8.0\EntityFramework.SqlServer.dll
+C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\bin\Debug\net8.0\EntityFramework.dll
+C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\bin\Debug\net8.0\System.Data.SqlClient.dll
+C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\bin\Debug\net8.0\runtimes\win-arm64\native\sni.dll
+C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\bin\Debug\net8.0\runtimes\win-x64\native\sni.dll
+C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\bin\Debug\net8.0\runtimes\win-x86\native\sni.dll
+C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\bin\Debug\net8.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\E.J.S\source\repos\CafeteriaProject\CafeteriaProject\bin\Debug\net8.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
